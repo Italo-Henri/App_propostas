@@ -17,5 +17,5 @@ function somar() {
     media = totalSoma / 12;
     console.log(media);
 
-    document.getElementById("resultado").setAttribute("value", media);
+    document.getElementById("resultado").setAttribute("value", media.toFixed(2));
 }

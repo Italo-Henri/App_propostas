@@ -7,45 +7,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <script src="/js/consumo.js"></script>
+    <link rel="stylesheet" href="/css/consumo.css">
     <title>MTEC - CONSUMO B</title>
 </head>
 
 <body>
 
-    <h2>CONSUMIDOR TIPO B</h2>
-    <div class="container">
-        <form>
-            <h5>Data:</h5>
-            <label for="">Janeiro:</label>
-            <input type="text" id="jan"> <br> <br>
-            <label for="">Fevereiro:</label>
-            <input type="text" id="fev"> <br> <br>
-            <label for="">Março:</label>
-            <input type="text" id="mar"> <br> <br>
-            <label for="">Abril:</label>
-            <input type="text" id="abr"> <br> <br>
-            <label for="">Maio:</label>
-            <input type="text" id="mai"> <br> <br>
-            <label for="">Junho:</label>
-            <input type="text" id="jun"> <br> <br>
-            <label for="">Julho:</label>
-            <input type="text" id="jul"> <br> <br>
-            <label for="">Agosto:</label>
-            <input type="text" id="ago"> <br> <br>
-            <label for="">Setembro:</label>
-            <input type="text" id="set"> <br> <br>
-            <label for="">Outubro:</label>
-            <input type="text" id="out"> <br> <br>
-            <label for="">Novembro:</label>
-            <input type="text" id="nov"> <br> <br>
-            <label for="">Dezembro:</label>
-            <input type="text" id="dez"> <br> <br>
-            Media:
-            <input id="resultado" value="" disabled> 
-            <button type="button" onclick="somar()">Somar</button>
-        </form>
+    <div class="titulo-pagina">
+        <h1>CONSUMIDOR TIPO B</h1>
     </div>
 
+    <div class="flex-container">
+        <form class="form-consumo">
+            <table class="table-consumo">
+                <tr>
+                    <th>Data</th>
+                    <th>Consumo(kWh)</th>
+                    <th>Valor(Total)</th>
+                    <th>Mês</th>
+                </tr>
+
+                <tr>
+                    <td><label for="">Janeiro:</label></td>
+                    <td><input type="text" id="jan"></td>
+                    <td><input type="text" disabled></td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Fevereiro:</label></td>
+                    <td><input type="text" id="fev"></td>
+                    <td><input type="text" disabled></td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Março:</label></td>
+                    <td><input type="text" id="mar"></td>
+                    <td><input type="text" disabled></td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Abril:</label></td>
+                    <td><input type="text" id="abr"></td>
+                    <td><input type="text" disabled></td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Maio:</label></td>
+                    <td><input type="text" id="mai"></td>
+                    <td><input type="text" disabled></td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Junho:</label></td>
+                    <td><input type="text" id="jun"> </td>
+                    <td><input type="text" disabled></td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Julho:</label></td>
+                    <td><input type="text" id="jul"></td>
+                    <td><input type="text" disabled></td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Agosto:</label></td>
+                    <td><input type="text" id="ago"></td>
+                    <td><input type="text" disabled></td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Setembro:</label></td>
+                    <td><input type="text" id="set"></td>
+                    <td><input type="text" disabled></td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Outubro:</label></td>
+                    <td><input type="text" id="out"></td>
+                    <td><input type="text" disabled></td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Novembro:</label></td>
+                    <td><input type="text" id="nov"></td>
+                    <td><input type="text" disabled></td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Dezembro:</label></td>
+                    <td><input type="text" id="dez"></td>
+                    <td><input type="text" disabled></td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Media:</td>
+                    <td><input id="resultado" value="" disabled></td>
+                    <td><button type="button" onclick="somar()">Calcular</button> </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="containerExtraAlimentacao">
+            <div class="form-extra">
+                <form>
+                    <table class="table-extra">
+                        <tr>
+                            <th><label>Extra(Multas)</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><button>Adicionar</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    
+            <div class="form-alimentacao">
+                <form>
+                    <table class="table-alimentacao">
+                        <tr>
+                            <th><label>Alimentação</label></th>
+                            <th><label> Quantidade</label></th>
+                        </tr>
+                        <tr>
+                            <td><label>Monofásica:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Bifásica:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Trifásica:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Disponibilidade:</label></td>
+                            <td><input type="text" id="" disabled></td>
+                        </tr>
+                    </table>                  
+                </form>
+            </div>
+
+            <div class="form-valorkwh">
+                <form>
+                    <table class="table-valorkwh">
+                        <tr>
+                            <th>
+                            <label>Valor do kWh</label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><label>R$:</label></td>
+                            <td><input type="text" id=""></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="form-diario">
+                <form>
+                    <table class="table-valorDiario">
+                        <tr>
+                            <th><label>Valor a ser abatido:</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
